@@ -1,0 +1,71 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storage_link",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Products.parquet",
+				"folderPath": "source",
+				"fileSystem": "test"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "product_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "product_name",
+				"type": "UTF8"
+			},
+			{
+				"name": "category",
+				"type": "UTF8"
+			},
+			{
+				"name": "subcategory",
+				"type": "UTF8"
+			},
+			{
+				"name": "brand",
+				"type": "UTF8"
+			},
+			{
+				"name": "supplier",
+				"type": "UTF8"
+			},
+			{
+				"name": "cost_price",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "selling_price",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "stock_quantity",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "rating",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "launch_date",
+				"type": "UTF8"
+			},
+			{
+				"name": "is_active",
+				"type": "BOOLEAN"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

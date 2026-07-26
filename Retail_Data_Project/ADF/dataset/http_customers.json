@@ -1,0 +1,18 @@
+{
+	"name": "http_customers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "http_link",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Naman579/Data/main/Customers.json"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

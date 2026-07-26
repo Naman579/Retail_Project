@@ -1,0 +1,20 @@
+{
+	"name": "adls_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storage_link",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Products.parquet",
+				"folderPath": "source",
+				"fileSystem": "test"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

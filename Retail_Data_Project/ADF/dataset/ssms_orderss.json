@@ -1,0 +1,25 @@
+{
+	"name": "ssms_orderss",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storage_link",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Orders.csv",
+				"folderPath": "Retail_data/Landing/Bronze",
+				"fileSystem": "test"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

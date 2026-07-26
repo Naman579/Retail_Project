@@ -1,0 +1,90 @@
+{
+	"name": "ssms_orders",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ssms_link",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "order_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "product_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "quantity",
+				"type": "nvarchar"
+			},
+			{
+				"name": "unit_price",
+				"type": "nvarchar"
+			},
+			{
+				"name": "discount_percent",
+				"type": "nvarchar"
+			},
+			{
+				"name": "discount_amount",
+				"type": "nvarchar"
+			},
+			{
+				"name": "tax_amount",
+				"type": "nvarchar"
+			},
+			{
+				"name": "shipping_cost",
+				"type": "nvarchar"
+			},
+			{
+				"name": "payment_method",
+				"type": "nvarchar"
+			},
+			{
+				"name": "shipment_mode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "warehouse_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "city",
+				"type": "nvarchar"
+			},
+			{
+				"name": "state",
+				"type": "nvarchar"
+			},
+			{
+				"name": "country",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "delivery_date",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Orders"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,15 @@
+{
+	"name": "project-factoryy",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fed6ac62-aecf-42c1-8658-2900bac7cca5",
+		"tenantId": "fe8f1359-e3c9-4f11-b3a8-704319b99763"
+	}
+}
